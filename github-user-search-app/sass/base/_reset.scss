@@ -1,0 +1,42 @@
+// Box sizing defaults to border-box
+// Backgrounds do not repeat by default
+*, ::before, ::after {
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+}
+
+// Cursors only change to hint non-obvious interfaces
+// Words break to prevent overflow
+html {
+  cursor: default;
+  word-break: break-all;
+}
+
+// Documents do not use a margin for outer padding
+body { margin: 0; }
+
+// Sets font weights to normal
+h1, h2, h3, h4, h5, h6, th, td, caption { font-weight:normal; }
+
+// Navigation lists do not include a marker style
+nav ol, nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+// Single taps are dispatched immediately on clickable elements
+a, area, button, input, label, select, summary, textarea {
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
+// Placeholders appear visually consistent in Internet Explorer
+:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+// Assets use a comfortable measure in all browsers
+iframe, img, input, select, textarea {
+  height: auto;
+  max-width: 100%;
+}

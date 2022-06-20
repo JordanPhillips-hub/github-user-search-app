@@ -1,0 +1,35 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+}
+
+html {
+  cursor: default;
+  word-break: break-all;
+}
+
+body {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, th, td, caption {
+  font-weight: normal;
+}
+
+nav ol, nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+a, area, button, input, label, select, summary, textarea {
+  touch-action: manipulation;
+}
+
+:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+iframe, img, input, select, textarea {
+  height: auto;
+  max-width: 100%;
+}/*# sourceMappingURL=styles.css.map */
