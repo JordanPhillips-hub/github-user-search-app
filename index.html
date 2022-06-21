@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,10 +13,12 @@
 <body>
   <main class="grid">
     <header class="theme">
-      <h1 class="theame__header">devfinder</h1>
+      <h1 class="theme__header">devfinder</h1>
       <div class="theme__toggle">
-        <div>Dark</div>
-        <div><img src="./assets/images/icon-moon.svg" alt="Moon"></div>
+        <div class="theme__toggle--dark">Dark</div>
+        <div class="theme__toggle-img">
+          <img src="./assets/images/icon-moon.svg" alt="Moon">
+        </div>
       </div>
 
       <!-- <div>
@@ -26,19 +29,80 @@
       </div> -->
     </header>
 
-    <section class="search-bar">
-      <img src="./assets/images/icon-search.svg" alt="search">
-      <input type="search" name="search" id="search" placeholder="Search Github username...">
-      <button type="submit">Search</button>
+    <section class="search">
+      <img class="search__icon" src="./assets/images/icon-search.svg" alt="search">
+      <input id="search" class="search__input" type="search" name="search" placeholder="Search Github username...">
+      <div id="searchErr" class="search__err">No results</div>
+      <button class="btn" type="submit">Search</button>
     </section>
 
-    <section>
-      Joined
+    <section class="results">
+
+      <div class="results__profile-img">
+        <img src="./assets/images/profile-placeholder.jpg" alt="" height="70px" width="70px">
+      </div>
+
+      <div>
+        <h2>The Octocat</h2>
+        <a href="#">@octocat</a>
+        <div>
+          Joined
+          <span>25 Jan 2011</span>
+        </div>
+      </div>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum assumenda enim id accusantium molestiae?
+      </p>
+
+      <div>
+        <div>
+
+          <div>
+            <div>Repos</div>
+            <div>8</div>
+          </div>
+
+          <div>
+            <div>Followers</div>
+            <div>3938</div>
+          </div>
+
+          <div>
+            <div>Following</div>
+            <div>9</div>
+          </div>
+
+        </div>
+      </div>
+
+      <div>
+        <div>
+          <div>
+            <img src="./assets/images/icon-location.svg" alt="Location">
+            <span>San Francisco</span>
+          </div>
     
-      Repos
-      Followers
-      Following
+          <div>
+            <img src="./assets/images/icon-website.svg" alt="Website">
+            <a>https://github.blog</a>
+          </div>
+        </div>
+
+        <div>
+          <div>
+            <img src="./assets/images/icon-twitter.svg" alt="Twitter">
+            <span>Not Available</span>
+          </div>
+
+          <div>
+            <img src="./assets/images/icon-company.svg" alt="Company">
+            <a>@github</a>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 </body>
+
 </html>
