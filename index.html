@@ -11,25 +11,29 @@
 </head>
 
 <body>
-  <main class="grid">
-    <header class="theme">
+  <main class="grid"> <!--GRID-->
+    <header class="theme"> <!--FLEX, COMP-->
       <h1 class="theme__header">devfinder</h1>
+
       <div class="theme__toggle">
         <div class="theme__toggle--dark">Dark</div>
+
         <div class="theme__toggle-img">
           <img src="./assets/images/icon-moon.svg" alt="Moon">
         </div>
       </div>
 
-      <!-- <div>
-        Light
-        <div>
+      <!-- LIGHT THEME TOGGLE-->
+      <!-- <div class="theme__toggle"> 
+        <div class="theme__toggle--dark">Light</div>
+        
+        <div class="theme__toggle-img">
           <img src="./assets/images/icon-sun.svg" alt="Sun">
         </div>
       </div> -->
     </header>
 
-    <section class="search">
+    <section class="search"> <!--FLEX, COMP-->
       <img class="search__icon" src="./assets/images/icon-search.svg" alt="search">
       <input id="search" class="search__input" type="search" name="search" placeholder="Search Github username...">
       <div id="searchErr" class="search__err">No results</div>
@@ -38,37 +42,42 @@
 
     <section class="results">
 
-      <div class="results__profile-img">
-        <img src="./assets/images/profile-placeholder.jpg" alt="" height="70px" width="70px">
-      </div>
-
-      <div>
-        <h2>The Octocat</h2>
-        <a href="#">@octocat</a>
-        <div>
-          Joined
-          <span>25 Jan 2011</span>
+      <div class="user-profile"> <!--FLEX, COMP-->
+        <div class="user-profile__img">
+          <img src="./assets/images/profile-placeholder.jpg" alt="Profile" height="70px" width="70px">
         </div>
-      </div>
 
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum assumenda enim id accusantium molestiae?
-      </p>
-
-      <div>
-        <div>
-
+        <div class="user-profile__info"> <!--FLEX-->
           <div>
-            <div>Repos</div>
-            <div>8</div>
+            <h2 class="user-profile__name">The Octocat</h2>
+            <a class="user-profile__link" href="#">@octocat</a>
           </div>
 
           <div>
+            <div class="user-profile__date">Joined<span>25 Jan 2011</span></div>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="results__desc">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum assumenda enim id accusantium molestiae?
+      </p>
+
+      <div class="stats"> <!--COMP-->
+        <div class="stats__flex"> <!--FLEX-->
+
+          <div class="stats__flex-child">
+            <div>Repos</div> <!--first child-->
+            <div>8</div> <!--nth child-->
+          </div>
+
+          <div class="stats__flex-child">
             <div>Followers</div>
             <div>3938</div>
           </div>
 
-          <div>
+          <div class="stats__flex-child">
             <div>Following</div>
             <div>9</div>
           </div>
@@ -76,30 +85,32 @@
         </div>
       </div>
 
-      <div>
+      <div class="links"> <!--FLEX, COMP-->
+
         <div>
-          <div>
-            <img src="./assets/images/icon-location.svg" alt="Location">
-            <span>San Francisco</span>
+          <div class="links__content"> <!--FLEX-->
+            <img class="links__content__img" src="./assets/images/icon-location.svg" alt="Location">
+            <span class="links__content__link">San Francisco</span>
           </div>
     
-          <div>
-            <img src="./assets/images/icon-website.svg" alt="Website">
-            <a>https://github.blog</a>
+          <div class="links__content"> <!--FLEX-->
+            <img class="links__content__img" src="./assets/images/icon-website.svg" alt="Website">
+            <a class="links__content__link">https://github.blog</a>
           </div>
         </div>
 
         <div>
-          <div>
-            <img src="./assets/images/icon-twitter.svg" alt="Twitter">
-            <span>Not Available</span>
+          <div class="links__content"> <!--FLEX-->
+            <img class="links__content__img" src="./assets/images/icon-twitter.svg" alt="Twitter">
+            <a class="links__content__link">Not Available</a>
           </div>
 
-          <div>
-            <img src="./assets/images/icon-company.svg" alt="Company">
-            <a>@github</a>
+          <div class="links__content"> <!--FLEX-->
+            <img class="links__content__img" src="./assets/images/icon-company.svg" alt="Company">
+            <a class="links__content__link">@github</a>
           </div>
         </div>
+
       </div>
     </section>
   </main>
