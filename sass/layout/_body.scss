@@ -1,0 +1,6 @@
+@use '../utils/' as u;
+
+body {
+  background-color: var(--clr-body-bg);
+  padding: u.rem(31) u.rem(24);
+}

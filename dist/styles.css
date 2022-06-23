@@ -1,6 +1,8 @@
 *, ::before, ::after {
   box-sizing: border-box;
   background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
 }
 
 html {
@@ -32,4 +34,18 @@ a, area, button, input, label, select, summary, textarea {
 iframe, img, input, select, textarea {
   height: auto;
   max-width: 100%;
+}
+
+:root {
+  --clr-body-bg: hsl(227, 100%, 98%);
+  --clr-headers: hsl(220, 18%, 16%);
+  --clr-primary: hsl(217, 35%, 45%);
+  --clr-secondary: hsl(217, 20%, 51%);
+  --clr-accent: hsl(212, 100%, 50%);
+  --clr-white: hsl(0, 0%, 100%);
+}
+
+body {
+  background-color: var(--clr-body-bg);
+  padding: 1.9375rem 1.5rem;
 }/*# sourceMappingURL=styles.css.map */
