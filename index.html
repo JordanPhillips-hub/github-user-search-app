@@ -12,7 +12,7 @@
 
 <body>
   <main class="grid"> <!--GRID-->
-    <header class="theme"> <!--FLEX, COMP-->
+    <header class="theme container"> <!--FLEX, COMP-->
       <h1 class="theme__header">devfinder</h1>
 
       <div class="theme__toggle">
@@ -33,16 +33,18 @@
       </div> -->
     </header>
 
-    <section class="search"> <!--FLEX, COMP-->
-      <img class="search__icon" src="./assets/images/icon-search.svg" alt="search">
+    <section class="search container container--white br-15"> <!--FLEX, COMP-->
+      <div class="search__icon">
+        <img src="./assets/images/icon-search.svg" alt="search">
+      </div>
       <input id="search" class="search__input" type="search" name="search" placeholder="Search Github username...">
       <div id="searchErr" class="search__err">No results</div>
-      <button class="btn" type="submit">Search</button>
+      <button class="btn btn--search" type="submit">Search</button>
     </section>
 
-    <section class="results">
+    <section class="results container container--white br-15">
 
-      <div class="user-profile"> <!--FLEX, COMP-->
+      <div class="user-profile container container--white br-15"> <!--FLEX, COMP-->
         <div class="user-profile__img">
           <img src="./assets/images/profile-placeholder.jpg" alt="Profile" height="70px" width="70px">
         </div>

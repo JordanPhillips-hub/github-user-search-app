@@ -1,0 +1,22 @@
+@use '../utils/functions' as f;
+
+.theme {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__header {
+    color: var(--clr-headers);
+  }
+
+  &__toggle {
+    display: flex;
+    align-items: flex-start;
+    gap: f.rem(16);
+
+    &--dark {
+      text-transform: uppercase;
+      letter-spacing: f.rem(2.5);
+    }
+  }
+}

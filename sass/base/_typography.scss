@@ -1,0 +1,42 @@
+@use '../utils/functions' as f;
+
+/* space-mono-regular - latin */
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/fonts/space-mono/space-mono-v11-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('/assets/fonts/space-mono/space-mono-v11-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts/space-mono/space-mono-v11-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/assets/fonts/space-mono/space-mono-v11-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('/assets/fonts/space-mono/space-mono-v11-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/assets/fonts/space-mono/space-mono-v11-latin-regular.svg#SpaceMono') format('svg'); /* Legacy iOS */
+}
+
+/* space-mono-700 - latin */
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/assets/fonts/space-mono/space-mono-v11-latin-700.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('/assets/fonts/space-mono/space-mono-v11-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts/space-mono/space-mono-v11-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/assets/fonts/space-mono/space-mono-v11-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('/assets/fonts/space-mono/space-mono-v11-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/assets/fonts/space-mono/space-mono-v11-latin-700.svg#SpaceMono') format('svg'); /* Legacy iOS */
+}
+
+body {
+  font-family: 'Space Mono', monospace;
+  font-size: f.rem(13);
+  font-weight: 400;
+}
+
+h1 {
+  font-size: f.rem(26);
+  line-height: f.rem(39);
+}
+
+h1, h2, h3, .theme__toggle, .btn { font-weight: 700; }

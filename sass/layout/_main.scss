@@ -1,0 +1,7 @@
+@use '../utils/functions' as f;
+
+main {
+  .theme { margin-bottom: f.rem(36); }
+
+  .search { margin-bottom: f.rem(16); }
+}

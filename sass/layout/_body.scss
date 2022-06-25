@@ -1,6 +1,9 @@
-@use '../utils/' as u;
+@use '../utils/functions' as f;
 
 body {
   background-color: var(--clr-body-bg);
-  padding: u.rem(31) u.rem(24);
+  color: var(--clr-primary);
+  display: grid;
+  place-items: center;
+  padding-top: f.rem(31); // clamp sizes
 }
