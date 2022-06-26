@@ -39,4 +39,6 @@ h1 {
   line-height: f.rem(39);
 }
 
+h1, h2, h3 { color: var(--clr-headers);}
+
 h1, h2, h3, .theme__toggle, .btn { font-weight: 700; }

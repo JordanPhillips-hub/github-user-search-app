@@ -1,13 +1,6 @@
 @use '../utils/functions' as f;
 
 .theme {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  &__header {
-    color: var(--clr-headers);
-  }
 
   &__toggle {
     display: flex;
@@ -17,6 +10,8 @@
     &--dark {
       text-transform: uppercase;
       letter-spacing: f.rem(2.5);
+
+      &:hover { cursor: pointer; }
     }
   }
 }

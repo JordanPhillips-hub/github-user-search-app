@@ -1,7 +1,8 @@
 @use '../utils/functions' as f;
 
 main {
-  .theme { margin-bottom: f.rem(36); }
-
-  .search { margin-bottom: f.rem(16); }
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: f.rem(24);
 }

@@ -67,6 +67,10 @@ h1 {
   line-height: 2.4375rem;
 }
 
+h1, h2, h3 {
+  color: var(--clr-headers);
+}
+
 h1, h2, h3, .theme__toggle, .btn {
   font-weight: 700;
 }
@@ -79,11 +83,22 @@ body {
   padding-top: 1.9375rem;
 }
 
-main .theme {
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 2.25rem;
 }
-main .search {
+
+aside {
   margin-bottom: 1rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 1.5rem;
 }
 
 .btn {
@@ -100,14 +115,6 @@ main .search {
   padding: 0.78125rem 0.78125rem 0.78125rem 1.125rem;
 }
 
-.theme {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.theme__header {
-  color: var(--clr-headers);
-}
 .theme__toggle {
   display: flex;
   align-items: flex-start;
@@ -116,6 +123,9 @@ main .search {
 .theme__toggle--dark {
   text-transform: uppercase;
   letter-spacing: 0.15625rem;
+}
+.theme__toggle--dark:hover {
+  cursor: pointer;
 }
 
 .search {
@@ -135,17 +145,17 @@ main .search {
 }
 .search__input::-moz-placeholder {
   font-family: "Space Mono", monospace;
-  font-size: 0.8125rem;
+  font-size: 0.75rem;
   color: var(--clr-primary);
 }
 .search__input:-ms-input-placeholder {
   font-family: "Space Mono", monospace;
-  font-size: 0.8125rem;
+  font-size: 0.75rem;
   color: var(--clr-primary);
 }
 .search__input::placeholder {
   font-family: "Space Mono", monospace;
-  font-size: 0.8125rem;
+  font-size: 0.75rem;
   color: var(--clr-primary);
 }
 .search__err {
