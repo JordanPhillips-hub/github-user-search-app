@@ -34,11 +34,21 @@ body {
   font-weight: 400;
 }
 
+h1, h2, h3 { color: var(--clr-headers);}
+
+h1, h2, h3, .theme__toggle, .btn { font-weight: 700; }
+
 h1 {
   font-size: f.rem(26);
   line-height: f.rem(39);
 }
 
-h1, h2, h3 { color: var(--clr-headers);}
+h2,
+h3 { font-size: f.rem(16); }
 
-h1, h2, h3, .theme__toggle, .btn { font-weight: 700; }
+p { line-height: 192%; }
+
+a {
+  color: var(--clr-accent);
+  text-decoration: none;
+}

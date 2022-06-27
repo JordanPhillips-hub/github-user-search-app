@@ -1,0 +1,68 @@
+@use '../utils/functions' as f;
+
+.profile-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: f.rem(24);
+  padding: f.rem(32) f.rem(24) f.rem(48);
+
+  .user-profile {
+    display: flex;
+    gap: f.rem(19);
+
+    &__img {
+      width: f.rem(70);
+      height: f.rem(70);
+      border-radius: 50%;
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+
+      &__date { margin-top: f.rem(6); }
+    }
+  }
+
+  .stats {
+    background-color: var(--clr-bg);
+    padding: f.rem(19) 0;
+    text-align: center;
+
+    &__flex {
+      display: flex;
+      justify-content: space-around;
+
+      &__child {
+        display: flex;
+        flex-direction: column;
+        gap: f.rem(8);
+
+        &__title { font-size: f.rem(11); }
+      }
+    }
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: f.rem(15);
+
+    &__inner {
+      display: flex;
+      flex-direction: column;
+      gap: f.rem(17);
+
+      &__content {
+        display: flex;
+        align-items: center;
+        gap: f.rem(13);
+
+        &__link { color: var(--clr-primary); }
+
+        &--location { gap: f.rem(19.25); }
+      }
+    }
+  }
+}

@@ -1,9 +1,8 @@
 @use './functions' as f;
 
 .container {
-  width: f.rem(327);
   max-width: f.rem(730);
-  // padding: ;
+  margin-inline: auto;
 }
 
 .container--white { background-color: var(--clr-white); }
@@ -11,3 +10,5 @@
 .br-15 { border-radius: f.rem(15); }
 
 .br-10 { border-radius: f.rem(10); }
+
+.not--available { opacity: 0.5; }

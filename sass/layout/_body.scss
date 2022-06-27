@@ -1,9 +1,9 @@
 @use '../utils/functions' as f;
 
 body {
-  background-color: var(--clr-body-bg);
+  background-color: var(--clr-bg);
   color: var(--clr-primary);
   display: grid;
   place-items: center;
-  padding-top: f.rem(31); // clamp sizes
+  padding: f.rem(31) f.rem(24) 0; // clamp sizes
 }

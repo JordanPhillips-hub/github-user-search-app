@@ -33,12 +33,10 @@ a, area, button, input, label, select, summary, textarea {
 }
 
 // Placeholders appear visually consistent in Internet Explorer
-:-ms-input-placeholder {
-  color: rgba(0, 0, 0, 0.54);
-}
+:-ms-input-placeholder { color: rgba(0, 0, 0, 0.54); }
 
 // Assets use a comfortable measure in all browsers
 iframe, img, input, select, textarea {
-  height: auto;
   max-width: 100%;
+  height: auto;
 }

@@ -1,8 +1,0 @@
-@use '../utils/functions' as f;
-
-main {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  gap: f.rem(24);
-}
