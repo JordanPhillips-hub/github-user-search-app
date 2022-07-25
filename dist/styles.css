@@ -125,11 +125,11 @@ aside {
   align-items: flex-start;
   gap: 1rem;
 }
-.theme__toggle--dark {
+.theme__toggle--dark, .theme__toggle--light {
   text-transform: uppercase;
   letter-spacing: 0.15625rem;
 }
-.theme__toggle--dark:hover {
+.theme__toggle--dark:hover, .theme__toggle--light:hover {
   cursor: pointer;
 }
 
@@ -264,4 +264,8 @@ aside {
 
 .not--available {
   opacity: 0.5;
+}
+
+.hidden {
+  display: none;
 }/*# sourceMappingURL=styles.css.map */
