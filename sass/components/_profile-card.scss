@@ -1,6 +1,7 @@
-@use '../utils/functions' as f;
+@use "../utils/functions" as f;
 
 .profile-card {
+  background-color: var(--clr-card-bg);
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -21,7 +22,9 @@
       display: flex;
       flex-direction: column;
 
-      &__date { margin-top: f.rem(6); }
+      &__date {
+        margin-top: f.rem(6);
+      }
     }
   }
 
@@ -39,7 +42,9 @@
         flex-direction: column;
         gap: f.rem(8);
 
-        &__title { font-size: f.rem(11); }
+        &__title {
+          font-size: f.rem(11);
+        }
       }
     }
   }
@@ -59,9 +64,13 @@
         align-items: center;
         gap: f.rem(13);
 
-        &__link { color: var(--clr-primary); }
+        &__link {
+          color: var(--clr-primary);
+        }
 
-        &--location { gap: f.rem(19.25); }
+        &--location {
+          gap: f.rem(19.25);
+        }
       }
     }
   }

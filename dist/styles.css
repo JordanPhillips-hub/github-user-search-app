@@ -134,6 +134,7 @@ aside {
 }
 
 .search {
+  background-color: var(--clr-card-bg);
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -168,6 +169,7 @@ aside {
 }
 
 .profile-card {
+  background-color: var(--clr-card-bg);
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -250,10 +252,6 @@ aside {
 .container {
   max-width: 45.625rem;
   margin-inline: auto;
-}
-
-.container--white {
-  background-color: var(--clr-white);
 }
 
 .br-15 {
