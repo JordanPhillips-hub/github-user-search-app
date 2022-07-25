@@ -41,20 +41,16 @@ iframe, img, input, select, textarea {
   font-family: "Space Mono";
   font-style: normal;
   font-weight: 400;
-  src: url("/assets/fonts/space-mono/space-mono-v11-latin-regular.eot");
-  /* IE9 Compat Modes */
-  src: local(""), url("/assets/fonts/space-mono/space-mono-v11-latin-regular.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/space-mono/space-mono-v11-latin-regular.woff2") format("woff2"), url("/assets/fonts/space-mono/space-mono-v11-latin-regular.woff") format("woff"), url("/assets/fonts/space-mono/space-mono-v11-latin-regular.ttf") format("truetype"), url("/assets/fonts/space-mono/space-mono-v11-latin-regular.svg#SpaceMono") format("svg");
-  /* Legacy iOS */
+  src: url("/assets/fonts/space-mono/space-mono-v11-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url("/assets/fonts/space-mono/space-mono-v11-latin-regular.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/space-mono/space-mono-v11-latin-regular.woff2") format("woff2"), url("/assets/fonts/space-mono/space-mono-v11-latin-regular.woff") format("woff"), url("/assets/fonts/space-mono/space-mono-v11-latin-regular.ttf") format("truetype"), url("/assets/fonts/space-mono/space-mono-v11-latin-regular.svg#SpaceMono") format("svg"); /* Legacy iOS */
 }
 /* space-mono-700 - latin */
 @font-face {
   font-family: "Space Mono";
   font-style: normal;
   font-weight: 700;
-  src: url("/assets/fonts/space-mono/space-mono-v11-latin-700.eot");
-  /* IE9 Compat Modes */
-  src: local(""), url("/assets/fonts/space-mono/space-mono-v11-latin-700.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/space-mono/space-mono-v11-latin-700.woff2") format("woff2"), url("/assets/fonts/space-mono/space-mono-v11-latin-700.woff") format("woff"), url("/assets/fonts/space-mono/space-mono-v11-latin-700.ttf") format("truetype"), url("/assets/fonts/space-mono/space-mono-v11-latin-700.svg#SpaceMono") format("svg");
-  /* Legacy iOS */
+  src: url("/assets/fonts/space-mono/space-mono-v11-latin-700.eot"); /* IE9 Compat Modes */
+  src: local(""), url("/assets/fonts/space-mono/space-mono-v11-latin-700.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/space-mono/space-mono-v11-latin-700.woff2") format("woff2"), url("/assets/fonts/space-mono/space-mono-v11-latin-700.woff") format("woff"), url("/assets/fonts/space-mono/space-mono-v11-latin-700.ttf") format("truetype"), url("/assets/fonts/space-mono/space-mono-v11-latin-700.svg#SpaceMono") format("svg"); /* Legacy iOS */
 }
 body {
   font-family: "Space Mono", monospace;
@@ -240,6 +236,15 @@ aside {
   --clr-secondary: hsl(217, 20%, 51%);
   --clr-accent: hsl(212, 100%, 50%);
   --clr-white: hsl(0, 0%, 100%);
+  --clr-card-bg: hsl(0, 0%, 100%);
+}
+
+[data-theme=dark] {
+  --clr-bg: hsl(220, 40%, 13%);
+  --clr-headers: hsl(0, 0%, 100%);
+  --clr-accent: hsl(212, 100%, 50%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-card-bg: hsl(222, 41%, 20%);
 }
 
 .container {
