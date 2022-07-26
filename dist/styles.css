@@ -125,12 +125,12 @@ aside {
   align-items: flex-start;
   gap: 1rem;
 }
+.theme__toggle:hover {
+  cursor: pointer;
+}
 .theme__toggle--dark, .theme__toggle--light {
   text-transform: uppercase;
   letter-spacing: 0.15625rem;
-}
-.theme__toggle--dark:hover, .theme__toggle--light:hover {
-  cursor: pointer;
 }
 
 .search {
@@ -150,19 +150,19 @@ aside {
   border: none;
 }
 .search__input::-moz-placeholder {
+  color: var(--clr-primary);
   font-family: "Space Mono", monospace;
   font-size: 0.75rem;
-  color: var(--clr-primary);
 }
 .search__input:-ms-input-placeholder {
+  color: var(--clr-primary);
   font-family: "Space Mono", monospace;
   font-size: 0.75rem;
-  color: var(--clr-primary);
 }
 .search__input::placeholder {
+  color: var(--clr-primary);
   font-family: "Space Mono", monospace;
   font-size: 0.75rem;
-  color: var(--clr-primary);
 }
 .search__err {
   display: none;
@@ -241,8 +241,10 @@ aside {
   --clr-card-bg: hsl(0, 0%, 100%);
 }
 
-[data-theme=dark] {
+.dark {
   --clr-bg: hsl(220, 40%, 13%);
+  --clr-primary: hsl(0, 0%, 100%);
+  --clr-secondary: hsl(0, 0%, 100%);
   --clr-headers: hsl(0, 0%, 100%);
   --clr-accent: hsl(212, 100%, 50%);
   --clr-white: hsl(0, 0%, 100%);
@@ -268,4 +270,8 @@ aside {
 
 .hidden {
   display: none;
+}
+
+.icon-light {
+  filter: hue-rotate(40deg) saturate(0.5) brightness(390%) saturate(4);
 }/*# sourceMappingURL=styles.css.map */

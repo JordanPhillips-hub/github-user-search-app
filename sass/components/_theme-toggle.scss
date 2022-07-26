@@ -5,15 +5,14 @@
     display: flex;
     align-items: flex-start;
     gap: f.rem(16);
+    &:hover {
+      cursor: pointer;
+    }
 
     &--dark,
     &--light {
       text-transform: uppercase;
       letter-spacing: f.rem(2.5);
-
-      &:hover {
-        cursor: pointer;
-      }
     }
   }
 }

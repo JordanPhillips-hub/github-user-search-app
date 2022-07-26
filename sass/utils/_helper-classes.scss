@@ -20,3 +20,8 @@
 .hidden {
   display: none;
 }
+
+.icon-light {
+  -webkit-filter: hue-rotate(40deg) saturate(0.5) brightness(390%) saturate(4);
+  filter: hue-rotate(40deg) saturate(0.5) brightness(390%) saturate(4);
+}

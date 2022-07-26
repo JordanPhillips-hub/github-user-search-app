@@ -8,8 +8,10 @@
   --clr-card-bg: hsl(0, 0%, 100%);
 }
 
-[data-theme="dark"] {
+.dark {
   --clr-bg: hsl(220, 40%, 13%);
+  --clr-primary: hsl(0, 0%, 100%);
+  --clr-secondary: hsl(0, 0%, 100%);
   --clr-headers: hsl(0, 0%, 100%);
   --clr-accent: hsl(212, 100%, 50%);
   --clr-white: hsl(0, 0%, 100%);

@@ -18,9 +18,9 @@
     border: none;
 
     &::placeholder {
+      color: var(--clr-primary);
       font-family: "Space Mono", monospace;
       font-size: f.rem(12);
-      color: var(--clr-primary);
     }
   }
 
