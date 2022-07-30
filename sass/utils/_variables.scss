@@ -8,7 +8,7 @@
   --clr-card-bg: hsl(0, 0%, 100%);
 }
 
-.dark {
+[data-theme="dark"] {
   --clr-bg: hsl(220, 40%, 13%);
   --clr-primary: hsl(0, 0%, 100%);
   --clr-secondary: hsl(0, 0%, 100%);

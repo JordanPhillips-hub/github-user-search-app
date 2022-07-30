@@ -146,8 +146,11 @@ aside {
   height: 1.25rem;
 }
 .search__input {
+  background-color: var(--clr-card-bg);
+  color: var(--clr-primary);
   width: 61%;
   border: none;
+  padding: 0.75rem;
 }
 .search__input::-moz-placeholder {
   color: var(--clr-primary);
@@ -241,7 +244,7 @@ aside {
   --clr-card-bg: hsl(0, 0%, 100%);
 }
 
-.dark {
+[data-theme=dark] {
   --clr-bg: hsl(220, 40%, 13%);
   --clr-primary: hsl(0, 0%, 100%);
   --clr-secondary: hsl(0, 0%, 100%);
@@ -272,6 +275,6 @@ aside {
   display: none;
 }
 
-.icon-light {
+.icon--light {
   filter: hue-rotate(40deg) saturate(0.5) brightness(390%) saturate(4);
 }/*# sourceMappingURL=styles.css.map */

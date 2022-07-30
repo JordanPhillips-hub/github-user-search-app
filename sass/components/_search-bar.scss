@@ -14,8 +14,11 @@
   }
 
   &__input {
+    background-color: var(--clr-card-bg);
+    color: var(--clr-primary);
     width: 61%;
     border: none;
+    padding: f.rem(12);
 
     &::placeholder {
       color: var(--clr-primary);

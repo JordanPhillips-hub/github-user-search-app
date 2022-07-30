@@ -19,20 +19,18 @@
     </div>
 
     <!-- Toggle Dark -->
-    <div id="themeDark" class="theme__toggle">
+    <div id="toggleDark" class="theme__toggle">
       <div class="theme__toggle--dark">Dark</div>
-
       <div class="theme__toggle-img">
-        <img src="./assets/images/icon-moon.svg" alt="moon">
+        <img id="dark" src="./assets/images/icon-moon.svg" alt="moon">
       </div>
     </div>
 
     <!-- Toggle Light -->
-    <div id="themeLight" class="theme__toggle hidden">
+    <div id="toggleLight" class="theme__toggle hidden">
       <div class="theme__toggle--light">Light</div>
-
       <div class="theme__toggle-img">
-        <img src="./assets/images/icon-sun.svg" alt="sun">
+        <img id="light" src="./assets/images/icon-sun.svg" alt="sun">
       </div>
     </div>
   </header>
@@ -44,7 +42,7 @@
       <div class="search__icon">
         <img src="./assets/images/icon-search.svg" alt="search">
       </div>
-      <input id="search" class="search__input" type="search" name="search" placeholder="Search GitHub username...">
+      <input id="search" class="search__input" type="text" name="search" placeholder="Search GitHub username...">
       <div id="searchErr" class="search__err">No results</div>
       <button class="btn btn--search" type="submit">Search</button>
     </div>
