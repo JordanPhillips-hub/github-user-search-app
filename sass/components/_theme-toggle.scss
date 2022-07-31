@@ -1,18 +1,16 @@
 @use "../utils/functions" as f;
 
-.theme {
-  &__toggle {
-    display: flex;
-    align-items: flex-start;
-    gap: f.rem(16);
-    &:hover {
-      cursor: pointer;
-    }
+.theme-toggle {
+  display: flex;
+  align-items: flex-start;
+  gap: f.rem(16);
+  &:hover {
+    cursor: pointer;
+  }
 
-    &--dark,
-    &--light {
-      text-transform: uppercase;
-      letter-spacing: f.rem(2.5);
-    }
+  &--dark,
+  &--light {
+    text-transform: uppercase;
+    letter-spacing: f.rem(2.5);
   }
 }

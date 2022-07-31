@@ -67,8 +67,8 @@ h3 {
 h1,
 h2,
 h3,
-.theme__toggle,
-.btn {
+.btn,
+.theme-toggle {
   font-weight: 700;
 }
 
@@ -126,15 +126,15 @@ aside {
   padding: 0.78125rem 0.78125rem 0.78125rem 1.125rem;
 }
 
-.theme__toggle {
+.theme-toggle {
   display: flex;
   align-items: flex-start;
   gap: 1rem;
 }
-.theme__toggle:hover {
+.theme-toggle:hover {
   cursor: pointer;
 }
-.theme__toggle--dark, .theme__toggle--light {
+.theme-toggle--dark, .theme-toggle--light {
   text-transform: uppercase;
   letter-spacing: 0.15625rem;
 }
