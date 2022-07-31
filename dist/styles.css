@@ -134,7 +134,7 @@ aside {
 .theme-toggle:hover {
   cursor: pointer;
 }
-.theme-toggle--dark, .theme-toggle--light {
+.theme-toggle__theme {
   text-transform: uppercase;
   letter-spacing: 0.15625rem;
 }

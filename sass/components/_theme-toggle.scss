@@ -8,8 +8,7 @@
     cursor: pointer;
   }
 
-  &--dark,
-  &--light {
+  &__theme {
     text-transform: uppercase;
     letter-spacing: f.rem(2.5);
   }
