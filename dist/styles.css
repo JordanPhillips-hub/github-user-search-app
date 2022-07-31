@@ -58,11 +58,17 @@ body {
   font-weight: 400;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: var(--clr-headers);
 }
 
-h1, h2, h3, .theme__toggle, .btn {
+h1,
+h2,
+h3,
+.theme__toggle,
+.btn {
   font-weight: 700;
 }
 
