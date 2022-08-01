@@ -9,13 +9,13 @@ const toggleLight = document.getElementById('toggleLight');
 const dark = 'dark';
 const light = 'light';
 const currentTheme = localStorage.getItem(theme);
-const icons = document.querySelectorAll('.links__inner__content__img');
+const icons = document.querySelectorAll('.links__img');
 
 const setDark = () => {
   toggleDark.classList.add('hidden');
   toggleLight.classList.remove('hidden');
   icons.forEach(icon => {
-    icon.classList.add('icon--light');
+    icon.classList.add('icon-light');
   });
 };
 
@@ -23,7 +23,7 @@ const setLight = () => {
   toggleLight.classList.add('hidden');
   toggleDark.classList.remove('hidden');
   icons.forEach(icon => {
-    icon.classList.remove('icon--light');
+    icon.classList.remove('icon-light');
   });
 };
 

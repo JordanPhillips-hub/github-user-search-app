@@ -20,6 +20,7 @@
     <!-- Toggle Dark -->
     <div id="toggleDark" class="theme-toggle">
       <div class="theme-toggle__theme">Dark</div>
+
       <div class="theme-toggle__img">
         <img id="dark" src="./assets/images/icon-moon.svg" alt="moon">
       </div>
@@ -28,6 +29,7 @@
     <!-- Toggle Light -->
     <div id="toggleLight" class="theme-toggle hidden">
       <div class="theme-toggle__theme">Light</div>
+
       <div class="theme-toggle__img">
         <img id="light" src="./assets/images/icon-sun.svg" alt="sun">
       </div>
@@ -35,42 +37,39 @@
   </header>
 
   <aside>
-
     <div class="search container br-15">
-      <!--FLEX, COMP-->
       <div class="search__icon">
         <img src="./assets/images/icon-search.svg" alt="search">
       </div>
+
       <input id="search" class="search__input" type="text" name="search" placeholder="Search GitHub username...">
+
       <div id="searchErr" class="search__err">No results</div>
+
       <button class="btn btn--search" type="submit">Search</button>
     </div>
-
   </aside>
 
   <main>
-
     <div class="profile-card container br-15">
-      <div class="user-profile">
+      <div class="profile">
         <div>
-          <img class="user-profile__img" src="./assets/images/profile-placeholder.jpg" alt="Profile">
+          <img class="profile__img" src="./assets/images/profile-placeholder.jpg" alt="Profile">
         </div>
 
-        <div class="user-profile__info">
-          <!--FLEX-->
-
+        <div class="profile__info">
           <div>
-            <h2 class="user-profile__info__name">The Octocat</h2>
-            <a class="user-profile__info__link" href="#">@octocat</a>
+            <h2 class="profile__name">The Octocat</h2>
+            <a class="profile__link" href="#">@octocat</a>
           </div>
 
           <div>
-            <div class="user-profile__info__date">Joined <span>25 Jan 2011</span></div>
+            <div class="profile__date">Joined <span>25 Jan 2011</span></div>
           </div>
         </div>
       </div>
 
-      <p class="user-profile__desc">
+      <p class="profile-card__desc">
         Lorem ipsum dolor sit amet consectetur adipisicing elit.
         Rerum assumenda enim id accusantium molestiae?
       </p>
@@ -78,18 +77,18 @@
       <div class="stats br-10">
         <div class="stats__flex">
 
-          <div class="stats__flex__child">
-            <div class="stats__flex__child__title">Repos</div>
+          <div class="stats__column">
+            <div class="stats__title">Repos</div>
             <h3>8</h3>
           </div>
 
-          <div class="stats__flex__child">
-            <div class="stats__flex__child__title">Followers</div>
+          <div class="stats__column">
+            <div class="stats__title">Followers</div>
             <h3>3938</h3>
           </div>
 
-          <div class="stats__flex__child">
-            <div class="stats__flex__child__title">Following</div>
+          <div class="stats__column">
+            <div class="stats__title">Following</div>
             <h3>9</h3>
           </div>
 
@@ -99,26 +98,26 @@
       <div class="links">
 
         <div class="links__inner">
-          <div class="links__inner__content links__inner__content--location">
-            <img class="links__inner__content__img" src="./assets/images/icon-location.svg" alt="Location">
-            <span class="links__inner__content__link">San Francisco</span>
+          <div class="links__content links__content--location">
+            <img class="links__img" src="./assets/images/icon-location.svg" alt="Location">
+            <span class="links__link">San Francisco</span>
           </div>
 
-          <div class="links__inner__content">
-            <img class="links__inner__content__img" src="./assets/images/icon-website.svg" alt="Website">
-            <a class="links__inner__content__link">https://github.blog</a>
+          <div class="links__content">
+            <img class="links__img" src="./assets/images/icon-website.svg" alt="Website">
+            <a class="links__link">https://github.blog</a>
           </div>
         </div>
 
         <div class="links__inner">
-          <div class="links__inner__content not--available">
-            <img class="links__inner__content__img" src="./assets/images/icon-twitter.svg" alt="Twitter">
-            <a class="links__inner__content__link">Not Available</a>
+          <div class="links__content not-available">
+            <img class="links__img" src="./assets/images/icon-twitter.svg" alt="Twitter">
+            <a class="links__link">Not Available</a>
           </div>
 
-          <div class="links__inner__content">
-            <img class="links__inner__content__img" src="./assets/images/icon-company.svg" alt="Company">
-            <a class="links__inner__content__link">@github</a>
+          <div class="links__content">
+            <img class="links__img" src="./assets/images/icon-company.svg" alt="Company">
+            <a class="links__link">@github</a>
           </div>
         </div>
       </div>

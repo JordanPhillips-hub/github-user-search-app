@@ -8,7 +8,7 @@
   gap: f.rem(24);
   padding: f.rem(32) f.rem(24) f.rem(48);
 
-  .user-profile {
+  .profile {
     display: flex;
     gap: f.rem(19);
 
@@ -21,10 +21,10 @@
     &__info {
       display: flex;
       flex-direction: column;
+    }
 
-      &__date {
-        margin-top: f.rem(6);
-      }
+    &__date {
+      margin-top: f.rem(6);
     }
   }
 
@@ -36,16 +36,16 @@
     &__flex {
       display: flex;
       justify-content: space-around;
+    }
 
-      &__child {
-        display: flex;
-        flex-direction: column;
-        gap: f.rem(8);
+    &__column {
+      display: flex;
+      flex-direction: column;
+      gap: f.rem(8);
+    }
 
-        &__title {
-          font-size: f.rem(11);
-        }
-      }
+    &__title {
+      font-size: f.rem(11);
     }
   }
 
@@ -58,20 +58,20 @@
       display: flex;
       flex-direction: column;
       gap: f.rem(17);
+    }
 
-      &__content {
-        display: flex;
-        align-items: center;
-        gap: f.rem(13);
+    &__content {
+      display: flex;
+      align-items: center;
+      gap: f.rem(13);
 
-        &__link {
-          color: var(--clr-primary);
-        }
-
-        &--location {
-          gap: f.rem(19.25);
-        }
+      &--location {
+        gap: f.rem(19.25);
       }
+    }
+
+    &__link {
+      color: var(--clr-primary);
     }
   }
 }
