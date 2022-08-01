@@ -125,6 +125,9 @@ aside {
   font-size: 0.875rem;
   padding: 0.78125rem 0.78125rem 0.78125rem 1.125rem;
 }
+.btn--search:hover {
+  background-color: hsl(212deg, 100%, 69%);
+}
 
 .theme-toggle {
   display: flex;
@@ -246,6 +249,7 @@ aside {
   --clr-primary: hsl(217, 35%, 45%);
   --clr-secondary: hsl(217, 20%, 51%);
   --clr-accent: hsl(212, 100%, 50%);
+  --accent-hover: hsl(212, 100%, 69%);
   --clr-white: hsl(0, 0%, 100%);
   --clr-card-bg: hsl(0, 0%, 100%);
 }

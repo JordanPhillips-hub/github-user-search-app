@@ -1,7 +1,7 @@
-@use '../utils/functions' as f;
+@use "../utils/functions" as f;
 
 .btn {
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
   background-color: var(--clr-accent);
   color: var(--clr-white);
   border: none;
@@ -12,4 +12,8 @@
 .btn--search {
   font-size: f.rem(14);
   padding: f.rem(12.5) f.rem(12.5) f.rem(12.5) f.rem(18);
+
+  &:hover {
+    background-color: hsl(212, 100%, 69%);
+  }
 }
