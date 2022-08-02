@@ -46,3 +46,33 @@ if (currentTheme) {
     setDark();
   };
 };
+
+// Search user
+const searchInput = document.getElementById('search');
+const form = document.getElementById('form');
+const searchButton = document.getElementById('searchBtn');
+const profileImg = document.getElementById('profileImg');
+
+form.addEventListener('submit', (e) => {
+  // Prevent refresh
+  e.preventDefault();
+
+  // Get value from search input
+  const searchValue = searchInput.value;
+
+  // Remove space from search
+  const originalName = searchValue.split(' ').join('');
+
+  // Get api data
+  fetch(`https://api.github.com/users/${originalName}`)
+    .then((data) => data.json())
+    .then((data) => {
+      console.log(data);
+
+      // Display data
+      // profileImg.setAttribute('src', data.avatar_url);
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+})

@@ -37,7 +37,7 @@
   </header>
 
   <aside>
-    <div class="search container br-15">
+    <form id="form" class="search container br-15" action="">
       <div class="search__icon">
         <img src="./assets/images/icon-search.svg" alt="search">
       </div>
@@ -47,14 +47,15 @@
       <div id="searchErr" class="search__err">No results</div>
 
       <button class="btn btn--search" type="submit">Search</button>
-    </div>
+    </form>
   </aside>
 
   <main>
     <div class="profile-card container br-15">
       <div class="profile">
         <div>
-          <img class="profile__img" src="./assets/images/profile-placeholder.jpg" alt="Profile">
+          <img id="profileImg" class="profile__img" src="https://avatars.githubusercontent.com/u/583231?=4"
+            alt="Profile">
         </div>
 
         <div class="profile__info">
