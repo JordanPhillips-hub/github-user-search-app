@@ -50,11 +50,14 @@ if (currentTheme) {
 // Search user
 const searchInput = document.getElementById('search');
 const form = document.getElementById('form');
-const searchButton = document.getElementById('searchBtn');
 const profileImg = document.getElementById('profileImg');
-
+const profileName = document.getElementById('profileName');
+const profileLink = document.getElementById('profileLink');
+const dateJoined = document.getElementById('dateJoined');
+const bio = document.getElementById('bio');
+console.log(bio);
 form.addEventListener('submit', (e) => {
-  // Prevent refresh
+  // Prevent page refresh
   e.preventDefault();
 
   // Get value from search input
@@ -68,11 +71,25 @@ form.addEventListener('submit', (e) => {
     .then((data) => data.json())
     .then((data) => {
       console.log(data);
-
+      // Take off time from date
+      const setDate = data.created_at.slice(0, 10);
       // Display data
-      // profileImg.setAttribute('src', data.avatar_url);
+      profileImg.setAttribute('src', data.avatar_url);
+      profileName.innerText = data.name;
+      profileLink.innerText = data.company;
+      dateJoined.innerText = setDate;
+
+      if (data.bio === null) {
+        bio.innerText = 'This user has yet to fill out their bio';
+      } else {
+        bio.innerText = data.bio;
+      };
+
+
     })
     .catch((err) => {
       console.log(err);
     });
 })
+
+

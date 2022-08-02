@@ -1,5 +1,6 @@
 @use "../utils/functions" as f;
 
+// Make media query to set min width on profile card above 768px
 .profile-card {
   background-color: var(--clr-card-bg);
   display: grid;
@@ -21,6 +22,10 @@
     &__info {
       display: flex;
       flex-direction: column;
+    }
+
+    &__link {
+      color: var(--clr-accent);
     }
 
     &__date {
